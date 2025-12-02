@@ -188,7 +188,7 @@ If you are not using Workload Identity authentication, get the connection inform
 ```bash
 COSMOSDBUSERNAME=$COSMOSDBNAME
 COSMOSDBPASSWORD=$(az cosmosdb keys list --name $COSMOSDBNAME --resource-group $RGNAME --query primaryMasterKey -o tsv)
-````
+```
 
 Finally, set the environment variables.
 
@@ -299,3 +299,5 @@ db.orders.find()
 # get completed orders
 db.orders.findOne({status: 1})
 ```
+
+<!-- Lab 9 CI/CD test -->
